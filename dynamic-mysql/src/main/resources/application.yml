@@ -1,0 +1,16 @@
+server:
+  port: 8089
+spring:
+  application:
+    name: dynamic-mysql
+dynamic:
+  master:
+    url:
+    username:
+    password:
+    driver-class-name:
+  slave:
+    url:
+    username:
+    password:
+    driver-class-name:

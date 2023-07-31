@@ -1,0 +1,3 @@
+# Project exclude paths
+/common/target/
+/minio-spring-boot-starter/target/

@@ -1,0 +1,13 @@
+server:
+  port: 8081
+spring:
+  application:
+    name: ting-eureka
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    register-with-eureka: true
+    fetch-registry: false
+    service-url:
+      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/

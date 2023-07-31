@@ -1,0 +1,16 @@
+server:
+  port: 8081
+spring:
+  application:
+    name: ting-prometheus
+management:
+  metrics:
+    export:
+      prometheus:
+        enabled: true
+    tags:
+      application: ${spring.application.name}
+  endpoints:
+    web:
+      exposure:
+        include: '*'
